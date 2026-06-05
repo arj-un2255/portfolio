@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arjun Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html{
+            scroll-behavior:smooth;
+        }
+        body{
+            margin:0;
+            background:#f8f5f2;
+            font-family:'Segoe UI',sans-serif;
+        }
+        .main-wrapper{
+            max-width:1200px;
+            margin:auto;
+            background:white;
+            min-height:100vh;
+        }
+        #header{
+            position:sticky;
+            top:0;
+            z-index:1000;
+            background:white;
+            border-bottom:1px solid #e5e5e5;
+            padding:15px 30px;
+        }
+        .logo{
+            color:#8b5e3c;
+            margin:0;
+            font-weight:bold;
+        }
+        #navbar a{
+            text-decoration:none;
+            color:#444;
+            margin-left:20px;
+            transition:.4s;
+        }
+        #navbar a:hover,
+        #navbar a.active{
+            color:#8b5e3c;
+            font-weight:600;
+        }
+        section{
+            padding:140px 40px;
+        }
+        #about,
+        #skills,
+        #contact{
+            margin-top:80px;
+            border-radius:20px;
+        }
+        #home{
+            min-height:100vh;
+            display:flex;
+            align-items:center;
+            margin-top:0;
+        }
+        #image{
+            width:300px;
+            height:300px;
+            object-fit:cover;
+            border-radius:50%;
+            border:6px solid #f5e6d3;
+            transition:.4s;
+        }
+
+        #image:hover{
+            transform:scale(1.05);
+        }
+        .hero-text h4{
+            color:#777;
+        }
+        .hero-text h3{
+            font-size:3.2rem;
+            color:#8b5e3c;
+            font-weight:bold;
+        }
+        .hero-text h5{
+            color:#666;
+            margin-bottom:20px;
+        }
+        .hero-text p{
+            color:#555;
+            line-height:1.8;
+            max-width:500px;
+        }
+        .btn-custom{
+            background:#8b5e3c;
+            color:white;
+            border:none;
+            padding:12px 30px;
+            border-radius:30px;
+            transition:.3s;
+        }
+        .btn-custom:hover{
+            background:#6f4729;
+            transform:translateY(-3px);
+        }
+        #about{
+            background:#faf7f3;
+            box-shadow:0 10px 30px rgba(0,0,0,0.05);
+        }
+        #about h2,
+        #skills h2,
+        #contact h2{
+            text-align:center;
+            margin-bottom:40px;
+            color:#8b5e3c;
+            font-weight:bold;
+        }
+        #about p{
+            max-width:850px;
+            margin:auto;
+            text-align:center;
+            font-size:18px;
+            line-height:2;
+            color:#555;
+        }
+        #skills{
+            background:white;
+        }
+        .skill-box{
+            background:#f5e6d3;
+            padding:35px 20px;
+            border-radius:15px;
+            text-align:center;
+            transition:.3s;
+            font-weight:600;
+            font-size:18px;
+        }
+        .skill-box:hover{
+            transform:translateY(-8px);
+            box-shadow:0 15px 25px rgba(0,0,0,0.08);
+        }
+        #contact{
+            background:#8b5e3c;
+            color:white;
+            text-align:center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        #contact p{
+            margin:15px 0;
+            font-size:18px;
+        }
+        #contact h2{
+            color: white;
+        }
+        @media(max-width:768px){
+
+            #header{
+                text-align:center;
+            }
+            #navbar{
+                margin-top:10px;
+            }
+            #navbar a{
+                margin:8px;
+                display:inline-block;
+            }
+            #image{
+                width:220px;
+                height:220px;
+            }
+            .hero-text{
+                text-align:center;
+                margin-top:30px;
+            }
+            .hero-text p{
+                margin:auto;
+            }
+            .hero-text h3{
+                font-size:2.2rem;
+            }
+            section{
+                padding:90px 20px;
+            }
+            #about,
+            #skills,
+            #contact{
+                margin-top:40px;
+            }
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+<div class="main-wrapper">
+    <div id="header">
+        <div class="d-md-flex justify-content-between align-items-center">
+            <h3 class="logo">ARJUN</h3>
+            <nav id="navbar">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </div>
+    <section id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center mb-5 mb-md-0">
+                    <img src="profpic_student.png" alt="Profile Image" id="image">
+                </div>
+                <div class="col-md-6 hero-text">
+                    <h4>Hello, I'm</h4>
+                    <h3>ARJUN M S</h3>
+                    <h5>UI / UX Developer</h5>
+                    <p>
+                        Passionate about creating clean, responsive and
+                        user-friendly web applications with modern design
+                        principles and seamless user experiences.
+                    </p>
+                   <a href="#about">
+                        <button class="btn-custom mt-3">
+                            Explore Portfolio
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                I am Arjun M S, a passionate UI/UX Developer with a strong
+                interest in creating elegant and responsive websites. I enjoy
+                transforming ideas into intuitive digital experiences using
+                HTML, CSS, Bootstrap, and JavaScript while focusing on
+                usability, accessibility, and modern design trends.
+            </p>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <div class="skill-box">HTML</div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="skill-box">CSS</div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="skill-box">JavaScript</div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="skill-box">Bootstrap</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>📧 arjun@example.com</p>
+            <p>📱 +91 XXXXX XXXXX</p>
+        </div>
+    </section>
+</div>
+</body>
+</html>
